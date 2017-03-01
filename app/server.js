@@ -15,7 +15,7 @@ var host = process.env.REDIS_PORT_6379_TCP_ADDR;
 var port = process.env.REDIS_PORT_6379_TCP_PORT;
 var redisClient = redis.createClient(port, host);
 
-mongoose.connect("mongodb://xxx:xxx@xxx");
+mongoose.connect("mongodb://yutong:123@ds147599.mlab.com:47599/tinyurl");
 
 app.use(useragent.express());
 app.use("/public", express.static(__dirname + "/public"));
